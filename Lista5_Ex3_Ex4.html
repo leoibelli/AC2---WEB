@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=, initial-scale=1.0"/>
+        <title>Tarefa 5</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>   
+    </head>
+    <body>
+        <div class="container" id="font">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Tarefa 5 - Exercicio 3 e 4</h1>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Exercicio 3</h3>
+                <p>Tabuada do número 5.</p>
+                <div class="col-md-3">
+                    <div>
+                        <button class="btn btn-primary" onclick="tabuadaDo5()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!--Exercicio4-->
+            <div class="row">
+                <h3>Exercicio 4</h3>
+                <p></p>
+                <div class="col-md-3">
+                    <div>
+                        <div class="mb-2">
+                            <label class="form-label">Numero</label>
+                            <input class="form-control" id="numTabuada">
+                        </div>
+                            <button class="btn btn-primary" onclick="tabuada()">Calcular</button>
+                      </div>
+                </div>
+                </div>
+    
+            <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+            ></script>
+        <script>
+            function tabuadaDo5(){
+                for(i = 1; i <= 10;i++){
+                    document.write("5 x " + i + " = " + (5 *i ) + '<br/>');             
+                }
+            }
+            function tabuada(){
+                let num = document.getElementById("numTabuada").value;
+                for(let i = 1; i <= 10;i++){
+                    document.write(num + " x " + i + " = " + (num * i ) + '<br/>');             
+            }
+        }
+        </script>
+    </body>
+</html>           
